@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reminder Application</title>
+</head>
+<body>
+    <h1>Welcome to the Reminder Application <span id="username">John</span></h1>
+    <p id="currentDate">Today is </p>
+    
+    <h2>Reminder Options</h2>
+    
+    <button onclick="setReminder()">Set Reminder</button>
+    <button onclick="modifyReminder()">Modify Reminder</button>
+    <button onclick="disableReminder()">Disable Reminder</button>
+    <button onclick="deleteReminder()">Delete Reminder</button>
+    <button onclick="enableReminder()">Enable Reminder</button>
+    <button onclick="viewReminders()">View your Reminders</button>
+    
+    <script>
+        // JavaScript functions for button actions
+        function setReminder() {
+            // Add your code to set a reminder here
+        }
+
+        function modifyReminder() {
+            // Add your code to modify a reminder here
+        }
+
+        function disableReminder() {
+            // Add your code to disable a reminder here
+        }
+
+        function deleteReminder() {
+            // Add your code to delete a reminder here
+        }
+
+        function enableReminder() {
+            // Add your code to enable a reminder here
+        }
+
+        function viewReminders() {
+            // Add your code to view reminders here
+        }
+
+        // Get and display today's date
+        const currentDateElement = document.getElementById("currentDate");
+        const today = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        currentDateElement.textContent += today.toLocaleDateString(undefined, options);
+    </script>
+</body>
+</html>
